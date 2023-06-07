@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #181818;
+    background: #f3f3f7;
+    overflow: hidden;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#card {
+    background: #fff;
+    min-width: 350px;
+    height: 480px;
+    box-shadow: 0 1px 15px -2px #ccc;
+    position: relative;
+}
+
+#card .close-btn {
+    background: #9d4edd;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px 25px;
+    width: 30px;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#card .close-btn:hover,
+#card .close-btn i:hover {
+    transform: rotate(135deg);
+    background: #eb5e28;
+    border-radius: 50%;
+}
+
+#card .card-repository-info {
+    padding: 1.5rem 1.8rem;
+}
+
+#card .title h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#card .form-search {
+    margin: 1.5rem 0;
+}
+
+#card .form-search form {
+    border: none;
+    border: #ccc 2px solid;
+    border-radius: 5px;
+}
+
+#card .form-search input {
+    border: none;
+    padding: 0.8rem 0;
+}
+
+#card .form-search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+#card .form-search input:focus {
+    outline: none;
+    border: none;
+}
+
+
+#card .form-search i {
+    margin: 0 0.8rem;
+    color: #999;
+}
+
+#card .form-search input::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: #999;
+}
+
+#card .repo-list div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#card .repo-list p {
+    margin: 0 0.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#card .list-items {
+    margin: 1.8rem 1.5rem;
+}
+
+#card .btn-show-more {
+    color: #9d4edd;
+    border-bottom: 1px solid #9d4edd;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#card .btn-show-more:hover {
+    color: #eb5e28;
+    border: none;
+}
+
+#card .create-card {
+    background: #9d4edd;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card .btn-create {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+#card .btn-create:hover {
+    color: #181818;
+}
